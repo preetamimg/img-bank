@@ -9,6 +9,7 @@
         background-position: center;
         & .heroImg{
             max-height: 480px;
+            max-width: 400px;
             height: 100%;
         }
         & .heroContent{
@@ -971,6 +972,13 @@
         }
     
         & .bankingCard{
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                box-shadow: rgba(238, 255, 0, 0.2) 0px 8px 24px;
+             & .iconBank{
+                transform: scale(1.1);
+             }
+            }
             padding: 25px;
             & .iconBank{
                 width: 60px;
@@ -978,6 +986,8 @@
                 border-radius: 50%;
                 background: linear-gradient(162deg, rgba(196,203,210,1) 0%, rgba(246,255,130,1) 59%);
                 padding: 15px;
+                transition: all 0.3s ease-in-out;
+
             }
             & .bankingPera{
                 font-size: 14px;
@@ -1083,7 +1093,7 @@
 @include media-breakpoint-down(md) {
     .bankingSection{
         & .bankingBgSection{
-        
+            padding: 30px 30px;
     
             & .bankingHeading{
               
@@ -1469,7 +1479,7 @@
     & .videoImgSection{
         width: 80%;
         & .videoImg{
-            max-height: 450px;
+            height: 450px;
             height: 100%;
         }
         & .videoBtn{
@@ -1551,7 +1561,8 @@
             
             & .customersCard{
                 & .heading{
-                    
+                    font-size: 55px;
+                    line-height: 65px;
                 }
             }
         }
@@ -1594,7 +1605,7 @@
         & .videoImgSection{
             width: 100%;
             & .videoImg{
-                max-height: 100% !important;
+                height: 100% !important;
             }
             & .videoBtn{
                
@@ -1660,13 +1671,17 @@
             &::before{
                 position: absolute !important;
                 content: "" !important;
-                left: 0;
+                left: 13px;
+                border-top-right-radius: 33px;
+                border-bottom-right-radius: 33px;
+
+                z-index: -1;
                 bottom: 0;
                 // top: 0;
-                height: 385px;
+                height: 100%;
                 z-index: -1;
-                width: 565PX;
-                border-radius: 24% 0% 0% 24% / 49% 8% 12% 50% ;
+                width: 100%;
+                border-radius: 15% 2% 2% 15% / 49% 8% 12% 50% ;
                 background: linear-gradient(162deg, rgb(196, 203, 210) 0%, rgb(246, 255, 130) 59%);
              
             }
@@ -1864,6 +1879,34 @@
         }
         
     }
+
+    & .servicesOwl{
+        & .owl-stage-outer{
+
+            padding: 40px 0px;
+            & .center{
+                & .serviceCard{
+                    transform: scale(1.1);
+                    margin:0px 20px;
+                }
+            }
+        }
+        & .owl-dots{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            & .owl-dot{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $black;
+                &.active{
+                    background-color: $theme1;
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint(basic) {}
@@ -1908,6 +1951,27 @@
             }
             
         }
+        & .servicesOwl{
+            & .owl-stage-outer{
+    
+             
+                & .center{
+                    & .serviceCard{
+                    
+                    }
+                }
+            }
+            & .owl-dots{
+            
+                gap: 10px;
+                & .owl-dot{
+         
+                    &.active{
+                     
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1939,6 +2003,27 @@
                 }
             }
             
+        }
+        & .servicesOwl{
+            & .owl-stage-outer{
+    
+             
+                & .center{
+                    & .serviceCard{
+                    
+                    }
+                }
+            }
+            & .owl-dots{
+            
+                gap: 10px;
+                & .owl-dot{
+         
+                    &.active{
+                     
+                    }
+                }
+            }
         }
     }
 }
@@ -1972,6 +2057,25 @@
             }
             
         }
+        & .servicesOwl{
+            & .owl-stage-outer{
+    
+             
+                & .center{
+                    & .serviceCard{
+                    
+                    }
+                }
+            }
+            & .owl-dots{
+                & .owl-dot{
+         
+                    &.active{
+                     
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -2003,6 +2107,28 @@
                 }
             }
             
+        }
+        & .servicesOwl{
+            & .owl-stage-outer{
+    
+             padding: 0 0 20px 0;
+                & .center{
+                    & .serviceCard{
+                    transform: scale(1);
+                    margin: 0;
+                    }
+                }
+            }
+            & .owl-dots{
+            
+             
+                & .owl-dot{
+         
+                    &.active{
+                     
+                    }
+                }
+            }
         }
     }
 }
@@ -2036,6 +2162,27 @@
                 }
             }
             
+        }
+        & .servicesOwl{
+            & .owl-stage-outer{
+    
+             
+                & .center{
+                    & .serviceCard{
+                    
+                    }
+                }
+            }
+            & .owl-dots{
+            
+             
+                & .owl-dot{
+         
+                    &.active{
+                     
+                    }
+                }
+            }
         }
     }
 }
@@ -2116,6 +2263,23 @@
               }
             }
             &:hover{
+            }
+        }
+        & .owl-dots{
+            display: none;
+            position: absolute;
+            left: 50%;
+            bottom: -27px;
+            transform: translateX(-50%);
+            gap: 10px;
+            & .owl-dot{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $black;
+                &.active{
+                    background-color: $theme1;
+                }
             }
         }
     }
@@ -2298,7 +2462,7 @@
                 }
             }
             & .owl-nav{
-         
+         display: none;
                 & button{
 
                     & img{
@@ -2314,6 +2478,19 @@
                   }
                 }
                 &:hover{
+                }
+            }
+            & .owl-dots{
+            display: block;
+            gap:10px;
+            display: flex;
+            align-items: center ;
+            justify-content: center;
+                & .owl-dot{
+              
+                    &.active{
+                        
+                    }
                 }
             }
         }
