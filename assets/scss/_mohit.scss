@@ -1,0 +1,1216 @@
+@charset "UTF-8";
+// about section start
+.about-us {
+    & .about-left {
+        & .about-title2 {
+            font-size: 16px;
+            font-weight: 400;
+            color: $black;
+            // line-height: 24px;
+        }
+        & .about-card {
+            & .about-card-icon {
+                height: 26px;
+                // width: 30px;
+                & img {
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            & .about-card-heading {
+                font-size: 16px;
+                color: $theme2;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    color: $black;
+                }
+            }
+            & .about-card-title {
+                font-size: 14px;
+                color: $black;
+            }
+            &:hover {
+                & .about-card-icon {
+                    & img {
+                        transform: rotateY(180deg);
+                    }
+                }
+            }
+        }
+    }
+    & .about-us-img {
+        // max-width: 440px;
+        // max-height: 521px;
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     top: 20px;
+        //     right: 0;
+        //     bottom: 20px;
+        //     height: 94%;
+        //     width: 100%;
+        //     background-color: $black;
+        //     z-index: -1;
+        //     transform: rotate(4deg);
+        // }
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     z-index: -1;
+        //     background: url(../img/mohit/about-dot.png) no-repeat;
+        //     top: -10%;
+        //     right: -20%;
+        //     height: 190px;
+        //     width: 190px;
+        // }
+        // & .about-img-content-main {
+        //     padding: 30px 35px;
+        //     right: -38px;
+        //     bottom: 14%;
+        //     &::before {
+        //         content: '';
+        //         position: absolute;
+        //         right: 0;
+        //         top: 100%;
+        //         height: 40px;
+        //         width: 40px;
+        //         z-index: -1;
+        //         background-color: $black;
+        //         clip-path: polygon(0 0, 0 100%, 100% 0);
+        //     }
+        //     & .about-year {
+        //         font-size:40px;
+        //         color: $theme1;
+        //         line-height: 10px;
+        //         & sup {
+        //             font-size: 28px;
+        //             right: 5px;
+        //             top: -0.3em;
+        //         }
+        //     }
+        //     & .about-experience {
+        //         font-size: 12px;
+        //         color: $theme1;
+        //         line-height: 14px;
+        //     }
+        // }
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .about-us {
+        & .about-left {
+            & .about-title2 {
+            }
+            & .about-card {
+                & .about-card-icon {
+                }
+                & .about-card-heading {
+                }
+                & .about-card-title {
+                }
+            }
+            }
+        & .about-us-img {
+            // max-width: 300px;
+            &::before {
+            }
+            &::after {
+                right: -10%;
+            }
+            & .about-img-content-main {
+                padding: 20px 26px;
+                right: -32px;
+                &::before {
+                }
+                & .about-year {
+                    font-size: 35px;
+                    & sup {
+                        font-size: 30px;
+                    }
+                }
+                & .about-experience {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .about-us {
+        & .about-left {
+            & .about-title2 {
+                font-size: 15px;
+            }
+            & .about-card {
+                & .about-card-icon {
+                    height: 25px;
+                    width: 25px;
+                }
+                & .about-card-heading {
+                    font-size: 15px;
+                }
+                & .about-card-title {
+                    font-size: 14px;
+                }
+            }
+            }
+        & .about-us-img {
+            // max-width: 300px;
+            &::before {
+            }
+            &::after {
+            }
+            & .about-img-content-main {
+                padding: 20px 24px;
+                right: -30px;
+                &::before {
+                }
+                & .about-year {
+                    font-size: 32px;
+                    & sup {
+                        font-size: 28px;
+                    }
+                }
+                & .about-experience {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .about-us {
+        & .about-left {
+            & .about-title2 {
+            }
+            & .about-card {
+                & .about-card-icon {
+                    height: 24px;
+                    width: 24px;
+                }
+                & .about-card-heading {
+                }
+                & .about-card-title {
+                }
+            }
+            }
+        & .about-us-img {
+            // max-width: 370px;
+            &::before {
+            }
+            &::after {
+            }
+            & .about-img-content-main {
+                padding: 20px 24px;
+                right: -30px;
+                &::before {
+                }
+                & .about-year {
+                    font-size: 29px;
+                    & sup {
+                        font-size: 26px;
+                    }
+                }
+                & .about-experience {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .about-us {
+        & .about-left {
+            & .about-title2 {
+                font-size: 14px;
+            }
+            & .about-card {
+                & .about-card-icon {
+                    height: 22px;
+                    width: 22px;
+                }
+                & .about-card-heading {
+                    font-size: 15px;
+                }
+                & .about-card-title {
+                    font-size: 14px;
+                }
+            }
+            }
+        & .about-us-img {
+            // max-width: 300px;
+            &::before {
+            }
+            &::after {
+            }
+            & .about-img-content-main {
+                padding: 18px 18px;
+                right: -30px;
+                &::before {
+                }
+                & .about-year {
+                    font-size: 24px;
+                    & sup {
+                        font-size: 22px;
+                    }
+                }
+                & .about-experience {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+@media screen  and (max-width:420px) {
+    .about-us {
+        & .about-left {
+            & .about-title2 {
+            }
+            & .about-card {
+                & .about-card-icon {
+                }
+                & .about-card-heading {
+                }
+                & .about-card-title {
+                }
+            }
+            }
+        & .about-us-img {
+            &::before {
+            }
+            &::after {
+                right: -8%;
+            }
+            & .about-img-content-main {
+                right: -23px;
+                &::before {
+                }
+                & .about-year {
+                    & sup {
+                    }
+                }
+                & .about-experience {
+                }
+            }
+        }
+    }
+}
+// about section end
+
+
+// CTA section start
+.CtaSection {
+    // background-color: #000d1f;
+    // padding: 40px 0;
+    // background: url(../img/mohit/ctasectionbg.jpg);
+    // background-position: center;
+    // background-size: cover;
+    // background-attachment: fixed;
+    // border-radius: 28px;
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     // background: url(../img/mohit/counter-bg.png);
+    //     background-color: rgba($black, 0.8);
+    //     z-index: 0;
+    //     // border-radius: 28px;
+    // }
+    & .ctadot {
+        fill: $white;
+        opacity: 0.4;
+    }
+    & .dotbig {
+        fill: $white;
+        opacity: 0.1;
+    }
+    & .ctaHeading {
+        font-size: 36px;
+        color: $white;
+        line-height: 120%;
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 50%;
+        //     height: 2px;
+        //     width: 50%;
+        //     background-color: $theme1;
+        //     transform: translateX(-50%);
+        // }
+    }
+    & .ctapara {
+        font-size: 16px;
+        color: $white;
+    }
+    & .contactBtn {
+        color: $white;
+    }
+}
+
+.ctatwo {
+    & .ctashapeonemain {
+        margin-left:-105px;
+        top: 5px;
+        & .ctashapeone {
+            fill: $theme2;
+            opacity: 0.5;
+        }
+    }
+    & .ctadotone {
+        fill: $red;
+    }
+    & .ctadottwo {
+        fill: $theme1;
+    }
+    & .ctadotthree {
+
+    }
+    & .ctashapeTwomain {
+        & .ctashapeTwo {
+            fill: $info ;
+            opacity: 0.5;
+        }
+    }
+    & .ctaHeading {
+        color: $black;
+    }
+    & .ctapara {
+        color: $black;
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .CtaSection {
+        // border-radius: 24px;
+        &::before {
+            // border-radius: 24px;
+        }
+        & .ctaHeading {
+            font-size: 33px;
+            &::before {
+            }
+        }
+        & .ctapara {
+        }
+        & .contactBtn {
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .CtaSection {
+        // border-radius: 20px;
+        &::before {
+            // border-radius: 20px;
+        }
+        & .ctaHeading {
+            font-size: 30px;
+            &::before {
+            }
+        }
+        & .ctapara {
+            font-size: 15px;
+        }
+        & .contactBtn {
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .CtaSection {
+        // border-radius: 16px;
+        &::before {
+            // border-radius: 16px;
+        }
+        & .ctaHeading {
+            font-size: 26px;
+            &::before {
+            }
+        }
+        & .ctapara {
+        }
+        & .contactBtn {
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .CtaSection {
+        // border-radius: 10px;
+        &::before {
+            // border-radius: 10px;
+        }
+        & .ctaHeading {
+            font-size: 24px;
+            &::before {
+            }
+        }
+        & .ctapara {
+            font-size: 14px;
+        }
+        & .contactBtn {
+        }
+    }
+}
+
+// CTA section end
+
+
+
+//  recent news section start 
+.newsSection {
+    & .newsSectionMain {
+        & .news-blog-card {
+            & .news-img {
+                aspect-ratio: 1/0.7;
+                & .blog-img {
+                    transition: all 0.3s ease-in-out;
+                    object-fit: cover;
+                    object-position: top;
+                }
+                & .news-plus {
+                    top: 0%;
+                    left:0;
+                    // transform: translate(-50%);
+                    transition: all 0.3s ease-in-out;
+                    opacity: 0;
+                    visibility: hidden;
+                    height: 0%;
+                    width: 100%;
+                    background: rgba($black, .4);
+                    & .newsPlusImg {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+                & .news-date {
+                    font-size: 14px;
+                    color: $white;
+                    padding: 16px 24px;
+                    & span {
+                        line-height: 16px;
+                        font-size: 20px;
+                    }
+                }
+            }
+            & .news-content {
+                padding:0 20px;
+                    & .news-blog-heading {
+                        // font-size: 22px;
+                        font-size: 16px;
+                        color: $black;
+                        transition: all 0.3s ease-in-out;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        &:hover {
+                            color: $theme2;
+                        }
+                    }
+                    & .news-blog-para {
+                        font-size: 16px;
+                        color: $black;
+                        line-height: 23px;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 4;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    & .news-title {
+                        font-size: 13px;
+                        color: $theme2;
+                        transition: all 0.3s ease-in-out;
+                        & .news-icon {
+                            height: 15px;
+                            width: 15px;
+                            & img {
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+                        &:hover {
+                                color: $black;
+                                & .news-icon {
+                                    & img {
+                                        filter: brightness(0.1);
+                                    }
+                                }
+                        }
+                    }
+                    & .news-slash {
+                        font-size: 9px;
+                        color: $theme2;
+                    }
+                    & .readmore-btn {
+                        font-size: 14px ;
+                        transition:all 0.3s ease-in-out;    
+                        color: $theme2;
+                        & .right-arrow {
+                            height: 15px;
+                            width: 15px;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        &:hover {
+                            color: $black;          
+                            & .right-arrow {
+                                filter:brightness(0.4);
+                                transform: translateX(5px);
+                            }
+                        }
+                    }
+            } 
+            &:hover {
+                & .blog-img {
+                    transform: scale(1.1);
+                }
+                & .news-img {
+                    & .news-plus {
+                        height: 100%;  
+                        opacity: 1;
+                        visibility: visible;                  
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .newsSection {
+        & .newsSectionMain {
+            & .news-blog-card {
+                & .news-img {
+                    & .blog-img {
+                    }
+                    & .news-plus {
+                        & .newsPlusImg {
+                        }
+                    }
+                    & .news-date {
+                        & span {
+                        }
+                    }
+                }
+                & .news-content {
+                    padding: 0 13px;
+                        & .news-blog-heading {
+                            // font-size: 20px;
+                            &:hover {
+                            }
+                        }
+                        & .news-blog-para {
+                        }
+                        & .news-title {
+                            & .news-icon {
+                                height: 13px;
+                                width: 13px;
+                                & img {
+                                }
+                            }
+                            &:hover {
+                                    & .news-icon {
+                                        & img {
+                                        }
+                                    }
+                            }
+                        }
+                        & .news-slash {
+                        }
+                        & .readmore-btn {
+                            & .right-arrow {
+                            }
+                            &:hover {      
+                                & .right-arrow {
+                                }
+                            }
+                        }
+                } 
+                &:hover {
+                    & .blog-img {
+                    }
+                    & .news-img {
+                        & .news-plus {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .newsSection {
+        & .newsSectionMain {
+            gap: 25px 0;
+            & .news-blog-card {
+                & .news-img {
+                    & .blog-img {
+                    }
+                    & .news-plus {
+                        & .newsPlusImg {
+                        }
+                    }
+                    & .news-date {
+                        font-size: 13px;
+                        padding: 8px 18px;
+                        & span {
+                            font-size: 17px;
+                        }
+                    }
+                }
+                & .news-content {
+                    padding: 0 18px;
+                        & .news-blog-heading {
+                            font-size: 16px;
+                            &:hover {
+                            }
+                        }
+                        & .news-blog-para {
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                        & .news-title {
+                            & .news-icon {
+                                height: 16px;
+                                width: 16px;
+                                & img {
+                                }
+                            }
+                            &:hover {
+                                    & .news-icon {
+                                        & img {
+                                        }
+                                    }
+                            }
+                        }
+                        & .news-slash {
+                        }
+                        & .readmore-btn {
+                            font-size: 14px;
+                            & .right-arrow {
+                                height: 14px;
+                                width: 14px;
+                            }
+                            &:hover {      
+                                & .right-arrow {
+                                }
+                            }
+                        }
+                } 
+                &:hover {
+                    & .blog-img {
+                    }
+                    & .news-img {
+                        & .news-plus {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .newsSection {
+        & .newsSectionMain {
+            gap: 25px;
+            & .news-blog-card {
+                & .news-img {
+                    & .blog-img {
+                    }
+                    & .news-plus {
+                        & .newsPlusImg {
+                        }
+                    }
+                    & .news-date {
+                        font-size: 12px;
+                        padding: 8px 18px;
+                        & span {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                & .news-content {
+                    padding: 0 16px;
+                        & .news-blog-heading {
+                            font-size: 16px;
+                            &:hover {
+                            }
+                        }
+                        & .news-blog-para {
+                            
+                        }
+                        & .news-title {
+                            & .news-icon {
+                                height: 15px;
+                                width: 15px;
+                                & img {
+                                }
+                            }
+                            &:hover {
+                                    & .news-icon {
+                                        & img {
+                                        }
+                                    }
+                            }
+                        }
+                        & .news-slash {
+                        }
+                        & .readmore-btn {
+                            font-size: 14px;
+                            & .right-arrow {
+                                height: 13px;
+                                width: 13px;
+                            }
+                            &:hover {      
+                                & .right-arrow {
+                                }
+                            }
+                        }
+                } 
+                &:hover {
+                    & .blog-img {
+                    }
+                    & .news-img {
+                        & .news-plus {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .newsSection {
+        & .newsSectionMain {
+            gap: 25px;
+            & .news-blog-card {
+                & .news-img {
+                    & .blog-img {
+                    }
+                    & .news-plus {
+                        & .newsPlusImg {
+                        }
+                    }
+                    & .news-date {
+                        font-size: 10px;
+                        padding: 6px 14px;
+                        & span {
+                            font-size: 13px;
+                        }
+                    }
+                }
+                & .news-content {
+                    padding: 0 12px;
+                        & .news-blog-heading {
+                            font-size: 15px;
+                            &:hover {
+                            }
+                        }
+                        & .news-blog-para {
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                        & .news-title {
+                            font-size: 13px;
+                            & .news-icon {
+                                height: 15px;
+                                width: 15px;
+                                & img {
+                                }
+                            }
+                            &:hover {
+                                    & .news-icon {
+                                        & img {
+                                        }
+                                    }
+                            }
+                        }
+                        & .news-slash {
+                        }
+                        & .readmore-btn {
+                            font-size: 14px;
+                            & .right-arrow {
+                                height: 11px;
+                                width: 11px;
+                            }
+                            &:hover {      
+                                & .right-arrow {
+                                }
+                            }
+                        }
+                } 
+                &:hover {
+                    & .blog-img {
+                    }
+                    & .news-img {
+                        & .news-plus {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//  recent news section end
+
+
+// hero card start
+.AboutCardMain {
+    & .aboutCard {
+        padding: 30px 45px;
+        position: relative;
+        overflow: hidden;
+        &::after{
+            content: '';
+            width: 2px;
+            height: 100%;
+            background-color: $theme2;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: $theme2;
+            top: 0;
+            left: 0;
+            transform: translateX(-100%);
+            transition: 0.4s linear;
+        }
+        & .CardIcon {
+            // &::before {
+            //     content: '';
+            //     position: absolute;
+            //     left: 0%;
+            //     top: 50%;
+            //     width: 50%;
+            //     height:65%;
+            //     transform: translateY(-50%);
+            //     background-color: $theme2;
+            //     background-image: linear-gradient(92deg, $white 0%, lighten($theme2,  39) 100%);
+            // }
+            & .CardImg {
+                height: 35px;
+                // transition: 0.3s linear;
+                width: 35px;
+                & img {
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            & .cardHeading {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 29px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        & .cardTitle {
+            font-size: 15px;
+            color: $black;
+            line-height: 26px;
+            transition: 0.3s all ease-in-out;
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        & .moredetaiBtn {
+            font-size: 12px;
+            color: $black;
+            letter-spacing: 1px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $theme2;
+                border-color: $theme2 !important;
+            }
+        }
+        &:hover {
+            & .cardHeading {
+                color: white;
+            }
+            & .cardTitle{
+                color: white;
+                position: relative;
+            }
+            & .moredetaiBtn{
+                color: white;
+                position: relative;
+                border-bottom: 1px solid white !important;
+            }
+            &::before{ 
+                transform: translateX(0);
+            }
+            & .CardIcon{
+                & .CardImg{
+                    & img {
+                        filter: brightness(100);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// youtube link section start
+// .videoLink {
+//     & .linkShapeOneMain {
+//         & .linkShapeOne {
+//             fill: $theme1
+//         }
+//     }
+//     & .linkShapeTwoMain {
+//         & .linkShapeTwo {
+//             fill: $theme2;
+//         }
+//     }
+//     & .linkDotsMain {
+//         & .linkDots {
+//             fill: $red;
+//         }
+//     }
+// }
+// youtube link section end
+
+
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .AboutCardMain {
+        & .aboutCard {
+            & .CardIcon {
+                
+                &::before {
+                }
+                & .CardImg {
+                    height: 45px;
+                    width: 45px;
+                }
+            }
+            & .cardHeading {
+            }
+            & .cardTitle {
+            }
+            & .moredetaiBtn {
+
+                &:hover {
+                }
+            }
+            &:hover {
+                & .cardHeading {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .AboutCardMain {
+        gap: 25px 0;
+        & .aboutCard {
+            padding: 20px 20px;
+            & .CardIcon {
+                
+                &::before {
+                }
+                & .CardImg {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            & .cardHeading {
+                font-size: 14px;
+            }
+            & .cardTitle {
+                font-size: 14px;
+                line-height: 19px;
+            }
+            & .moredetaiBtn {
+                &:hover {
+                }
+            }
+            &:hover {
+                & .cardHeading {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .AboutCardMain {
+        gap: 25px 0;
+        & .aboutCard {
+            padding: 25px 30px;
+            & .CardIcon {
+                
+                &::before {
+                }
+                & .CardImg {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            & .cardHeading {
+                font-size: 15px;
+            }
+            & .cardTitle {
+                line-height: 19px;
+            }
+            & .moredetaiBtn {
+                font-size: 12px;
+                &:hover {
+                }
+            }
+            &:hover {
+                & .cardHeading {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .AboutCardMain {
+        gap: 25px;
+        & .aboutCard {
+            padding: 20px 25px;
+            & .CardIcon {
+                
+                &::before {
+                }
+                & .CardImg {
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+            & .cardTitle {
+                // font-size: 12px;
+                line-height: 18px;
+            }
+            & .moredetaiBtn {
+                font-size: 12px;
+                &:hover {
+                }
+            }
+            &:hover {
+                & .cardHeading {
+                }
+            }
+        }
+    }
+    
+}
+
+// hero card end
+
+.ctadownload {
+    & .shapeOne {
+        left: -9%;
+        & .shapeoneinner {
+            opacity: 0.5;
+            fill: $warning;
+        }
+    }
+    & .shapeTwo {
+        right: -5%;
+        & .shapeTwoInner {
+            fill:$info;
+            opacity: 0.4;
+        }
+    }
+    & .dotsMain {
+        & .dotOne {
+            fill: $orange;
+        }
+        & .dotTwo {
+            fill: $warning;
+        }
+        & .dotThree {
+            fill: $primary;
+        }
+    }
+    // &::before {
+
+    // }
+}
+
+// gallery section start
+@media screen and (max-width:400px) {
+    
+    .gallaryFluid {
+        & .galleryCard {
+            width: 100%;
+        }
+    }
+}
+// gallery section end

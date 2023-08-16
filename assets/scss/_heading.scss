@@ -1,0 +1,55 @@
+.sectionHeading{
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: 700;
+    color: $black;
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .sectionHeading{
+      
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .sectionHeading{
+      
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .sectionHeading{
+        font-size: 38px;
+        line-height: 45px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .sectionHeading{
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .sectionHeading{
+        font-size: 22px;
+        line-height: 27px;
+        & br{
+            display: none;
+        }
+    }
+}
